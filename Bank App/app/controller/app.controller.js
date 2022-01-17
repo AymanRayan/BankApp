@@ -69,7 +69,6 @@ const writeDataToJSON = (data) =>{
      static editUser = (req,res)=>{
             const data = readFromJSON()
             const id = req.params.id
-            
             const userIndex =this.searchUserById(id, data)
             data[userIndex] = {id, ...req.body}
             // res.send(req.body)
@@ -94,7 +93,30 @@ const writeDataToJSON = (data) =>{
         let userIndex=this.searchUserById(id,data)
         if(userIndex == -1)
         isNotFound =true
-        res.render("adddraw",{pageTitle:"Transactions",user:data[userIndex],isNotFound})
+        res.render("adddraw",{pageTitle:"Transactions",user:data[userIndex],isNotFound,})
+    }
+    static addWithdrawPost = (req,res) => {
+        const arr =[]
+        let isTransactioned = false
+        const data = readFromJSON()
+        const id = req.params.id
+        const userIndex = this.searchUserById(id,data)
+        
+        console.log(data[userIndex].initial)
+        let add = req.body.add
+        let withDraw= req.body.withDraw
+        data[userIndex] = {...data[userIndex],...req.body}
+        writeDataToJSON(data)
+        if(data[userIndex].hasOwnProperty('add')|| data[userIndex].hasOwnProperty('withDraw')){
+            isTransactioned = true
+            data[userIndex].initial = Number(data[userIndex].initial) + Number(add) - Number(withDraw)
+            writeDataToJSON(data)
+            let transactions = req.body
+            
+            arr.push(transactions)
+            console.log(arr)
+            res.render("adddraw",{pageTitle:"Transactions",user:data[userIndex],isTransactioned})
+        }  
     }
  }
  module.exports=User

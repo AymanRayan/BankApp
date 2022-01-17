@@ -3,7 +3,7 @@
 <body>
     <section class="container my-4">
         <div class="mb-3">
-            <a href="single.html" class="btn btn-primary">Show Account</a>
+            <a href="/single/{{user.id}}" class="btn btn-primary">Show Account</a>
         </div>
             <table class="table table-bordered">
                 <thead>
@@ -13,19 +13,35 @@
                         <th>Address</th>
                         <th>Phone</th>
                         <th>Intial Balance</th>
+                        <th>Add</th>
+                        <th>Withdraw</th>
                     </tr>
                     
                 </thead>
             <tbody id="addDraw">
                  {{#if isNotFound}}
-            <td colspan="6" class="bg-danger text-white ">No Users Yet</td>
+                 <tr> 
+                <td colspan="7" class="bg-danger text-white ">No Users Yet</td> 
+                 </tr>
             {{else}}
-             <td>{{user.id}}</td>
+            <tr>
+           <td>{{user.id}}</td>
           <td>{{user.name}}</td>
           <td>{{user.address}}</td>
           <td>{{user.phone}}</td>
           <td>{{user.initial}}</td>
           <td>{{user.transactions}}</td>
+            </tr>
+            {{/if}}
+            {{#if isTransactioned}}
+            {{!-- {{#each arr}} --}}
+            <tr>
+                <td colspan="4">The added money ={{user.add}} ,The withdrawed money ={{user.withDraw}} and the total balance={{user.initial}}</td>
+                <td>{{user.initial}}</td>
+                <td>{{user.add}}</td>
+                <td>{{user.withDraw}}</td>
+            </tr>
+            {{!-- {{/each}} --}}
             {{/if}}
             </tbody>
         </table>

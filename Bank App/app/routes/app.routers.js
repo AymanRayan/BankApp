@@ -10,5 +10,7 @@ appRouter.get('/delete/:id',User.deletUser)
 appRouter.get('/edit/:id',User.getEdit)
 appRouter.post('/edit/:id',User.editUser)
 
+appRouter.get('/adddraw/:id',User.getaddwith)
+appRouter.post('/adddraw/:id',User.addWithdrawPost)
 
 module.exports = appRouter
