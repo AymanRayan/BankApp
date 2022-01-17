@@ -1,0 +1,49 @@
+{{>header}}
+{{>navbar}}
+
+<body class="container my-4">
+  <div class="mb-3">
+    <a href="add" class="btn btn-primary">Add New</a>
+  </div>
+  <div>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Acc.Num</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Phone</th>
+          <th>Intial Balance</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#if isEmpty}}
+        <tr>
+          <td colspan="6" class="bg-danger text-white ">No Users Yet</td>
+        </tr>
+        {{else}}
+        {{#each data}}
+        <tr>
+          <td>{{this.id}}</td>
+          <td>{{this.name}}</td>
+          <td>{{this.address}}</td>
+          <td>{{this.phone}}</td>
+          <td>{{this.initial}}</td>
+          <td>
+            <a class="btn btn-primary" href="/single/{{this.id}}">Show</a>
+            <a class="btn btn-warning" href="/edit/{{this.id}}">Edit</a>
+            <a class="btn btn-danger " href="/delete/{{this.id}}">Delete</a>
+            <a class="btn btn-danger " href="/adddraw/{{this.id}}">Add/Withdraw</a>
+          </td>
+        </tr>
+        {{/each}}
+        {{/if}}
+
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
+{{>footer}}
