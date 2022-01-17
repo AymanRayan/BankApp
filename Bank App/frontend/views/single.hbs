@@ -1,0 +1,40 @@
+{{>header}}
+{{>navbar}}
+<body>
+    <section class="container my-4">
+        <div class="mb-3">
+            <a href="adddraw" class="btn btn-primary">Add / Withdraw</a>
+        </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Acc.Num</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Intial Balance</th>
+                        <th>Transactions</th>
+                    </tr>
+                </thead>
+            
+            <tbody>
+                {{#if isNotFound}}
+                <td colspan="6" class="bg-danger text-white ">No Users Yet</td>
+            {{else}}
+            <td>{{user.id}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.address}}</td>
+          <td>{{user.phone}}</td>
+          <td>{{user.initial}}</td>
+          <td>{{user.transactions}}</td>
+
+                {{/if}}
+            </tbody>
+        </table>
+        <div class="mb-3">
+            <a href="/home" class="btn btn-primary">Back to All users</a>
+        </div>
+    </section>
+</body>
+</html>
+{{>footer}}
