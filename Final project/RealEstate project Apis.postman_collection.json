@@ -1,0 +1,1117 @@
+{
+	"info": {
+		"_postman_id": "b5afbd11-0daa-4a92-b663-b4c7d7884b4f",
+		"name": "RealEstate project Apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin to property",
+			"item": [
+				{
+					"name": "{{admin_url}}/addnew",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMzNzcwMzR9.Qrq--FcwB4p_dHUu7AbdHFb0YgZgGoPvjU56ybzkd4I",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"villa\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin_url}}/addnew",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"addnew"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{admin_url}}/edit prop",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMxMzkzMTB9.IFHQG3YlEIUUdUnf0BD8QpVdE4sGyUG_yalawCVPyPg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"house\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin_url}}/editone/61f056fff586d7e5785921f3",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"editone",
+								"61f056fff586d7e5785921f3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{admin_url}}/addpropimg",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMxMzkzMTB9.IFHQG3YlEIUUdUnf0BD8QpVdE4sGyUG_yalawCVPyPg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/Civil Studies/Personaly/Screen Shots/2.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{admin_url}}/addpropimg/61f056fff586d7e5785921f3",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"addpropimg",
+								"61f056fff586d7e5785921f3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{admin_url}}/delete porop",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMxMzkzMTB9.IFHQG3YlEIUUdUnf0BD8QpVdE4sGyUG_yalawCVPyPg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin_url}}/deletethis/61f056fff586d7e5785921f3",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"deletethis",
+								"61f056fff586d7e5785921f3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{admin_url}}/delete all poro",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMxMzkzMTB9.IFHQG3YlEIUUdUnf0BD8QpVdE4sGyUG_yalawCVPyPg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin_url}}/deleteall/property",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"deleteall",
+								"property"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{admin_url}}/delete all images",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMxMzkzMTB9.IFHQG3YlEIUUdUnf0BD8QpVdE4sGyUG_yalawCVPyPg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin_url}}/deleteallimages/61f056fff586d7e5785921f3",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"deleteallimages",
+								"61f056fff586d7e5785921f3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{admin_url}}/delete prop image",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMxMzkzMTB9.IFHQG3YlEIUUdUnf0BD8QpVdE4sGyUG_yalawCVPyPg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin_url}}/del/house/61f4538aa6068a03fec03ddd",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"del",
+								"house",
+								"61f4538aa6068a03fec03ddd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin&users to property",
+			"item": [
+				{
+					"name": "{{user_url}}/properties",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMxMzkzMTB9.IFHQG3YlEIUUdUnf0BD8QpVdE4sGyUG_yalawCVPyPg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{user_url}}/properties",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"properties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}/single property",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMxMzkzMTB9.IFHQG3YlEIUUdUnf0BD8QpVdE4sGyUG_yalawCVPyPg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{admin_url}}/theproperty/61f056fff586d7e5785921f3",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"theproperty",
+								"61f056fff586d7e5785921f3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "only user to property",
+			"item": []
+		},
+		{
+			"name": "admin only",
+			"item": [
+				{
+					"name": "{{admin_url}}/newadmin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMzNzUxNjV9.81oCb5r0KCfWFBrnirbf63NYtM0XWgjjS7dLYUpiHxA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ayman\",\r\n    \"email\":\"ay@asdfg.com\",\r\n    \"password\":\"123456\",\r\n    \"gender\":\"Male\",\r\n    \"age\":\"30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin_url}}/newadmin",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"newadmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{admin_url}}/allusers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMzNzUxNjV9.81oCb5r0KCfWFBrnirbf63NYtM0XWgjjS7dLYUpiHxA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin_url}}/allusers",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"allusers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{admin_url}}/Block user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMzNzUxNjV9.81oCb5r0KCfWFBrnirbf63NYtM0XWgjjS7dLYUpiHxA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin_url}}/blockuser/61edb10b3fd01302bac69b5b",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"blockuser",
+								"61edb10b3fd01302bac69b5b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{admin_url}}/UnBlock user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMzNzUxNjV9.81oCb5r0KCfWFBrnirbf63NYtM0XWgjjS7dLYUpiHxA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin_url}}/unblockuser/61edb10b3fd01302bac69b5b",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"unblockuser",
+								"61edb10b3fd01302bac69b5b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{admin_url}}/Undate progress user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMzNzUxNjV9.81oCb5r0KCfWFBrnirbf63NYtM0XWgjjS7dLYUpiHxA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"progress\":[\r\n        {\"first\":2000},\r\n        {\"remaining\":500000},\r\n        {\"total\":502000}\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin_url}}/updateprogress/61edb10b3fd01302bac69b5b",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"updateprogress",
+								"61edb10b3fd01302bac69b5b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{admin_url}}/deleteallusers",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMzNzUxNjV9.81oCb5r0KCfWFBrnirbf63NYtM0XWgjjS7dLYUpiHxA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{admin_url}}/deleteall/users",
+							"host": [
+								"{{admin_url}}"
+							],
+							"path": [
+								"deleteall",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "only user",
+			"item": [
+				{
+					"name": "{{user_url}}____edit price range",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzZDNkNGI3ZWM0YjUwYmVhNjkyMjIiLCJpYXQiOjE2NDMzNzAxNzd9.6Iiv6k6_USLRbRpO49Hc_k1HvpVfFgAuZjRHZlK8Lnw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"pricerange\":[5000,200000]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{user_url}}/61f3d3d4b7ec4b50bea69222/pricerange",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"61f3d3d4b7ec4b50bea69222",
+								"pricerange"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}/edit/61f3d3d4b7ec4b50bea69222 Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzZDNkNGI3ZWM0YjUwYmVhNjkyMjIiLCJpYXQiOjE2NDMzNzAxNzd9.6Iiv6k6_USLRbRpO49Hc_k1HvpVfFgAuZjRHZlK8Lnw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ahmed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{user_url}}/edit/61f3d3d4b7ec4b50bea69222",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"edit",
+								"61f3d3d4b7ec4b50bea69222"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}/theprogress/61f3d3d4b7ec4b50bea69222",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzZDNkNGI3ZWM0YjUwYmVhNjkyMjIiLCJpYXQiOjE2NDMzNzAxNzd9.6Iiv6k6_USLRbRpO49Hc_k1HvpVfFgAuZjRHZlK8Lnw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{user_url}}/theprogress/61f3d3d4b7ec4b50bea69222",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"theprogress",
+								"61f3d3d4b7ec4b50bea69222"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}__activate by otp",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzZDNkNGI3ZWM0YjUwYmVhNjkyMjIiLCJpYXQiOjE2NDMzNzAxNzd9.6Iiv6k6_USLRbRpO49Hc_k1HvpVfFgAuZjRHZlK8Lnw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{user_url}}/activate/zyxMC5azNQ/61f3d3d4b7ec4b50bea69222",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"activate",
+								"zyxMC5azNQ",
+								"61f3d3d4b7ec4b50bea69222"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin & user",
+			"item": [
+				{
+					"name": "{{user_url}}/signOut",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\":\"admin\",\r\n    \"name\":\"ayman\",\r\n    \"age\":26,\r\n    \"password\":\"123456\",\r\n    \"email\":\"aymanrayan26@gmail.com\",\r\n    \"gender\":\"Male\",\r\n    \"status\":false,\r\n    \"pricerange\":[20000,400000],\r\n    \"addresses\":[\r\n        {\"addtype\":\"home\",\r\n        \"address\":\"mahmodya\"}\r\n    ],\r\n    \"paymentmethods\":\"cash\",\r\n    \"arearange\":[\r\n        90,\r\n        120\r\n    ],\r\n    \"residenttype\":\"rent\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{user_url}}/signOut",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"signOut"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"123456\",\r\n    \"email\":\"aymanrayan2@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{user_url}}/login",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}/sendotp",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzZDNkNGI3ZWM0YjUwYmVhNjkyMjIiLCJpYXQiOjE2NDMzNjk1NTd9.M3sV2ezG-cWW1VQbIXr3ViGfu9XxBDvV5-Cz0CARBB4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{user_url}}/sendotp",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"sendotp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}/reactive",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzZDNkNGI3ZWM0YjUwYmVhNjkyMjIiLCJpYXQiOjE2NDMzNjk1NTd9.M3sV2ezG-cWW1VQbIXr3ViGfu9XxBDvV5-Cz0CARBB4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"otp\":\"zyxMC5azNQ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{user_url}}/reactive",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"reactive"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}/logoutall",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzZDNkNGI3ZWM0YjUwYmVhNjkyMjIiLCJpYXQiOjE2NDMzNjk1NTd9.M3sV2ezG-cWW1VQbIXr3ViGfu9XxBDvV5-Cz0CARBB4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{user_url}}/logoutall",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"logoutall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}/logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzZDNkNGI3ZWM0YjUwYmVhNjkyMjIiLCJpYXQiOjE2NDMzNzAxMTB9.lj7xxIttqCBx5j30vztMGyRfauq4Zuaq-mo-FBlLtgo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{user_url}}/logout",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}/changepass",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzZDNkNGI3ZWM0YjUwYmVhNjkyMjIiLCJpYXQiOjE2NDMzNzAxNzd9.6Iiv6k6_USLRbRpO49Hc_k1HvpVfFgAuZjRHZlK8Lnw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"password\":\"123456\",\r\n   \"newPass\":\"1234567\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{user_url}}/changepass",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"changepass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}___profile image",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzZDNkNGI3ZWM0YjUwYmVhNjkyMjIiLCJpYXQiOjE2NDMzNzAxNzd9.6Iiv6k6_USLRbRpO49Hc_k1HvpVfFgAuZjRHZlK8Lnw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/Civil Studies/Personaly/Screen Shots/todd.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{user_url}}/profile/61f3d3d4b7ec4b50bea69222",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"profile",
+								"61f3d3d4b7ec4b50bea69222"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}__showOne",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzZDNkNGI3ZWM0YjUwYmVhNjkyMjIiLCJpYXQiOjE2NDMzNzAxNzd9.6Iiv6k6_USLRbRpO49Hc_k1HvpVfFgAuZjRHZlK8Lnw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{user_url}}/61f3d3d4b7ec4b50bea69222",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"61f3d3d4b7ec4b50bea69222"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}__deleteme",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWYzZDNkNGI3ZWM0YjUwYmVhNjkyMjIiLCJpYXQiOjE2NDMzNzAxNzd9.6Iiv6k6_USLRbRpO49Hc_k1HvpVfFgAuZjRHZlK8Lnw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{user_url}}/delete/61f3d3d4b7ec4b50bea69222",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"delete",
+								"61f3d3d4b7ec4b50bea69222"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{user_url}}/me",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{user_url}}/me",
+							"host": [
+								"{{user_url}}"
+							],
+							"path": [
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "add property image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMxMzkzMTB9.IFHQG3YlEIUUdUnf0BD8QpVdE4sGyUG_yalawCVPyPg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/admin/addpropimg/61f056fff586d7e5785921f3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"admin",
+						"addpropimg",
+						"61f056fff586d7e5785921f3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete single img",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMxMzkzMTB9.IFHQG3YlEIUUdUnf0BD8QpVdE4sGyUG_yalawCVPyPg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/admin/del/housser/61f0656851e5ccac8167728e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"admin",
+						"del",
+						"housser",
+						"61f0656851e5ccac8167728e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show all2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWVkYmUyZjNhMWNmODA1MzlkOWMwN2UiLCJpYXQiOjE2NDMyODE4OTV9.sn1RJHa1CRswU_NlzKRBH6YY1Uos1SQxWR1BGi7RFOY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/admin/allusers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"admin",
+						"allusers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "user_url",
+			"value": "http://localhost:3001/user",
+			"type": "string"
+		},
+		{
+			"key": "admin_url",
+			"value": "http://localhost:3001/admin",
+			"type": "string"
+		}
+	]
+}

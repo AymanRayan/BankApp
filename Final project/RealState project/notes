@@ -1,0 +1,45 @@
+admin to property:
+1-add =>done
+2-edit =>done
+3-deleteone =>done
+4-deleteall =>done
+5-add imageprop =>done
+6-deleteimages =>done
+7-deleteoneimage =>
+----------------------------
+admin & user to property:
+ 8-showall =>done
+ 9-showone => done
+----------------------------
+ only user to property:
+ 10-add to fav
+ 10*- remove from fav
+ _________________________
+ admin only:
+ 11-addnew admin =>done
+ 12-showall =>done
+ 13-blockuser =>done
+ 14-unblockuser =>done
+ 15-deleteall users =>done
+ 16-update the progress =>done
+
+ -------------------------
+ admin & user 
+ 17-register =>done
+ 18-show one =>done
+ 19-delete me =>done
+ 20-login =>done
+ 21-sendotp =>done
+ 22-reactive =>done
+ 23-logout =>done
+ 24-logoutall =>done
+ 25-changepass =>done
+ 26-profile pic => done
+ -------------------------
+ useronly
+ 27-edite me => done
+ 28-activeuser => done
+ 29-edite pricerange =>done
+ 30-show the progress =>done
+ 
+ 
