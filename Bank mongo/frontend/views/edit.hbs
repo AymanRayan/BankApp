@@ -1,0 +1,46 @@
+{{>header}}
+{{>navbar}}
+<body >
+<div class ="container my-4">
+  <div class="mb-3">
+    <a href="/home" class="btn btn-primary">Back to All Users Page</a>
+</div>
+{{#if isNotFound}}
+  <div class="alert alert-danger">
+        user not found
+    </div>
+{{else}}
+ <form method="post" class="my-3">
+       {{!-- <div class="btn-3">
+         <label>Acc.Num</label>
+          <input name="accNum" class="form-control" >
+          </div> --}}
+       <div class="btn-3">
+        <label>Name</label>
+        <input  name="name"
+        value="{{user.name}}" eclass="form-control" placeholder="enter your name">
+       </div>
+       <div class="btn-3">
+        <label>Address</label>
+        <input name="address"
+        value="{{user.address}}"  class="form-control" placeholder="enter your address">
+       </div>
+       <div class="btn-3">
+       <label>Phone</label>
+       <input  name="phone"
+       value="{{user.phone}}"  class="form-control" placeholder="enter your phone">
+       </div>
+       <div class="btn-3">
+       <label>Initial Balance</label>
+       <input  name="initial" 
+       value="{{user.initial}}" class="form-control" placeholder="enter your balance">
+       </div>
+       <div>
+        <button class="btn-3 btn btn-primary" href="">Save</button>
+       </div>
+     </form>
+    </div>
+    {{/if}}
+  </body>
+</html>
+{{>footer}}
